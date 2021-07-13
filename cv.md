@@ -13,3 +13,12 @@
 ### 4. Active
 ### 5. Attentive
 ### 6. With a good sense of humor
+# Skills
+### <li> HTML </li>
+### <li> CSS </li>
+### <li> GIT </li>
+# Work experience 
+# Education
+### <a href="https://rs.school/"> Rs School (Present) </a> 
+# English level
+### <b>B2</b>
