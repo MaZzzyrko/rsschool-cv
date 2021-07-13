@@ -1,1 +1,0 @@
-https://MaZzzyrko.github.io/rsschool-cv/cv
