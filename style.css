@@ -36,12 +36,10 @@ body {
     margin-left: 60px;
 }
 
-
 .title {
     height: 250px;
     align-items: center;
     display: flex;
-    
 }
 
 .photo {
