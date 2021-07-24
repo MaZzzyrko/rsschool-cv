@@ -75,4 +75,14 @@ body {
     position: relative;
     bottom: 20px;
 }
-    
+
+.footer time  {
+    width: 76px;
+    height: 76px;
+}
+
+.footer mark {
+    background: #8FBC8F	;
+    border-radius: 25px;
+    margin-left: 5px;
+}
