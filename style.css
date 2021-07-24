@@ -1,184 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300;1,500&display=swap');
+
 * {
+    color: black; 
+}
+
+body {
+    max-height: 120vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
     box-sizing: border-box;
-    max-width: 450px;
-    max-height: 500px;
-    background: #FAF0E6;
-    font-family: 'Montserrat', sans-serif; 
-    margin: 0px;
-    padding: 0px;
-    left: 55px;
-    color: black;
-    list-style: none;
-}
-
-.body {
-    line-height: 20px;
-    font-size: 14px;
-    color: #000000   
-}
-
-.myname {
-    font-size: 40px;
-    font-weight: 600px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.contacts {
-    font-weight: 600px;
-    font-size: 20px;
-    line-height: 2pc;
-    position: relative;
-    top: 13px;  
-    left: 40px;
-}
-
-.cv {
+    max-width: 200vh;
     display: flex;
-    width: 750px;
-    height: auto;
-    margin: 56px;
-    position: relative;
-    margin-bottom: 20px;
-    left: 300px;     
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(#FFDEAD, #808080, #BDB76B);
+}
+
+.main_cv {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.info_main {
+    margin-left: 60px;
+}
+
+.info_dop {
+    margin-left: 60px;
+}
+
+
+.title {
+    height: 250px;
+    align-items: center;
+    display: flex;
+    
 }
 
 .photo {
+    margin-left: 200px;
+}
+
+.photo img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 75%;
+    align-items: right;
+    margin-right: 40px;  
+}
+
+.footer {
     box-sizing: border-box;
-    border-radius: 15%;
-    position: relative;
-    bottom: 30px;
-    left: 20px;
-}
-
-.cv_skillname {   
-    margin-left: 56px; 
-    line-height: 2pc;
-    position: relative;
-    left: 290px;
-}
-
-.cv_r  {
-    width: 600px;
-    padding: 20px;
-    margin: 20px;
-    position: relative;
-    left: 980px;
-    bottom: 700px;
-    font-size: 20px;
-    line-height: 1pc; 
-}
-
-.title .skills {
-    margin-bottom: 20px;
-    position: relative;
-    left: 260px;
-}
-
-.cv_skillname {
-    margin-left: 108px;
-}
-
-.skills {
-    margin: 56px;
-    font-size: 40px;
-    font-weight: 600px;
-    text-transform: uppercase;
-    text-shadow: #D2691E;
-    line-height: 1pc;
-    text-align: center;
-    position: relative;
-    left: 200px;
-}
-
-.workexp {
-    position: relative;
-    font-size: 40px;
-    left: 390px;
-    top: 15px;
-    text-align: center;  
-    text-transform: uppercase;
-}
-
-.workmyexp {
-    font-weight: 600px;
-    position: relative;
-    left: 390px;
-    top: 35px;
-    font-size: 20px;
-    line-height: 1.5pc;   
-}
-
-.info {
-    font-weight: 600px;
-    font-size: 20px;
-    line-height: 1.5pc;
-    position: relative;
-    top: 25px;
-    left: 65px;  
-}
-
-.qualities  {
-     font-size: 20px;
-     position: relative;
-     left: 1120px;
-     bottom: 700px;
-     line-height: 2pc;  
-}
-
-.education {
-    font-size: 40px;
-    font-weight: 600px;
-    text-transform: uppercase;
-    line-height: 2pc;
-    position: relative;
-    left: 1020px;
-    bottom: 650px;
-    text-align: center;   
-}
-
-.edu {
-    position: relative;
-    left: 1100px;
-    bottom: 620px;
-    font-size: 20px;  
-}
-
-.englvl {
-    font-size: 40px;
-    font-weight: 600px;
-    text-transform: uppercase;
-    line-height: 2pc;
-    position: relative;
-    left: 1060px;
-    bottom: 550px;
-    text-align: center;
-}
-
-.eng {
-    position: relative;
-    left: 1105px;
-    bottom: 510px;
-    font-size: 23px;   
-}
-
-.cv_item {
-    font-size: 23px;
-    margin-left: 50px;
-}
-
-.footer a {
-    font-size: 20px;
-    position: relative;
-    left: 1700px;
-    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
 
 .footer img {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    left: 1700px;
-    width: 200px;
+    width: 120px;
 }
+
+
+    
