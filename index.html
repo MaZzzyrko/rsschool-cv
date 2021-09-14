@@ -6,6 +6,9 @@
 <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 <title>Mazyrko Evgeny</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body> 
     <div class="main_cv">
@@ -31,12 +34,26 @@
         <ul>
             <li>HTML</li> 
             <li>CSS</li> 
+            <li>JavaScript</li> 
+            <li>GIT</li> 
             <li>GIT</li> 
          </ul>
         <h2>Work Experience</h2>
         <p>I have no working experience yet, but I'am dreaming of getting it.</p>
         <h2>Sample code</h2>
-        <p><a href="https://github.com/MaZzzyrko">All my works here</a></p>
+        <pre><code class="sample"> 
+            function bingo(ticket, win){
+                let num = 0;
+                  ticket.forEach (lottery => {
+                        if (lottery[0].includes (String.fromCharCode (lottery[1]))) {
+                          num++;
+                        }
+                      });
+                
+              return (win <= num) ? "Winner!" : "Loser!";
+            }
+        </code></pre>
+         
     </section>
         <section class="info_main">
           <h2>About me</h2>  

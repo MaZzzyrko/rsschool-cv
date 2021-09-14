@@ -5,7 +5,6 @@
 }
 
 body {
-    max-height: 120vh;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     box-sizing: border-box;
@@ -13,8 +12,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(#FFDEAD, #808080, #BDB76B);
-    
 }
 
 .main_cv {
@@ -83,4 +80,9 @@ body {
     background: #8FBC8F	;
     border-radius: 25px;
     margin-left: 5px;
+}
+
+.sample {
+    border: dashed;
+    width: 95vh;
 }
