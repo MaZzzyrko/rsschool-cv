@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mazyrko Evgeny</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
@@ -11,12 +11,35 @@
 <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body> 
-    <div class="main_cv">
-        <div class="title">
+  <div class="wrapper">
+    <header class="header">
+      <div class="header_container">
+        <img src="CV.png" alt="cvlogo"><a href="#" class="header_logo"></a>
+        <div class="header_menu menu">
+          <div class="ico_burg">
+            <span></span>
+          </div>
+          <nav class="body_list">
+            <ul class="menu_list">
+              <li><a data-goto=".section__1" href="#" class="menu_link">Contacts</a></li>
+              <li><a data-goto=".section__2" href="#" class="menu_link">Skills</a></li>
+              <li><a data-goto=".section__3" href="#" class="menu_link">Sample code</a></li>
+              <li><a data-goto=".section__4" href="#" class="menu_link">My Projects</a></li>
+              <li><a data-goto=".section__5" href="#" class="menu_link">About me</a></li>
+              <li><a data-goto=".section__6" href="#" class="menu_link">Education</a></li>
+              <li><a data-goto=".section__7" href="#" class="menu_link">English Level</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>  
+  </div>  
+  <div class="main_cv">
+      <div class="title">
             <div class="photo">
                 <img src="imageimage.jpg" alt="no photo found">
             </div> 
-                <div class="info_t">
+                <div class="info_t section__1">
                     <h1>Mazyrko Evgeny</h1>
                     <h2>Contacts:</h2>
                     <ul>
@@ -24,38 +47,77 @@
                         <li><a href="https://vk.com/de4dmemories">VK</a></li>
                         <li><a href="mailto:evgeny.mazyrko@gmail.com">Email</a></li>
                         <li>Telegram: @DeadMemoriesW</li>
-                        <li>Discord: @MaZzzyrko (rs-school)</li>
+                        <li>Discord: Dead Memories#7459</li>
                     </ul>
                 </div>
-        </div>     
+    </div>     
  <main> 
-    <section class="info_dop">  
+    <section class="info_dop section__2">  
         <h2>Skills</h2>
         <ul>
             <li>HTML</li> 
             <li>CSS</li> 
             <li>JavaScript</li> 
+            <li>React</li> 
             <li>GIT</li> 
-            <li>GIT</li> 
+            <li>Node JS</li> 
+            <li>Figma / Photoshop</li>
          </ul>
         <h2>Work Experience</h2>
         <p>I have no working experience yet, but I'am dreaming of getting it.</p>
         <h2>Sample code</h2>
-        <pre><code class="sample"> 
-            function bingo(ticket, win){
-                let num = 0;
-                  ticket.forEach (lottery => {
-                        if (lottery[0].includes (String.fromCharCode (lottery[1]))) {
-                          num++;
-                        }
-                      });
-                
-              return (win <= num) ? "Winner!" : "Loser!";
-            }
-        </code></pre>
-         
+        <pre><code class="sample section__3"> 
+exports.min = function min (array) {
+if (array == undefined || 1 > array.length){ 
+return 0;
+} else {
+var min = array[0]; array.forEach (num => {
+if (min > num) {
+min = num;
+ }
+});
+return min;
+ }
+}
+        
+exports.max = function max (array) {
+if (array == undefined || 1 > array.length){ 
+return 0;
+} else {
+var max = array[0]; array.forEach (num => {
+if (num > max) {
+max = num;  
+ }
+});
+          
+return max;
+ }
+}
+       
+exports.avg = function avg (array) {
+if (array == undefined || 1 > array.length){ 
+return 0;
+} else {
+return array.reduce((index, total) 
+=> total + index) / 
+array.length;
+ } 
+}
+    </code></pre>
+    <section class="project section__4">
+      <h2>My Projects</h2>
+      <div class="projects">
+        <p class="museum">Museum Louvre:</p>
+          <a href="https://rolling-scopes-school.github.io/mazzzyrko-JSFEPRESCHOOL/museum/"> 
+          <img src="https://images4.alphacoders.com/962/thumb-1920-96216.jpg" alt="louvre"/> </a> 
+        <p class="filter">Photo Filter:</p>
+          <a href="https://rolling-scopes-school.github.io/mazzzyrko-JSFEPRESCHOOL/photo-filter/"> 
+          <img src="https://www.befunky.com/images/wp/wp-2018-11-Photo-Effects-18.jpg?auto=webp&format=jpg&width=944" alt="filter"/> </a> 
+        </p>
+      </div>
     </section>
-        <section class="info_main">
+    </section>
+    <section class="info_main section__5">
           <h2>About me</h2>  
           <p>My name is Evgeny. Iam 22. Half a year ago, I graduated. My goal is to go deeper into the IT field and work in a large company of like-minded people in future. Some of my good qualities here..I'am:</p>
            <ul>
@@ -66,11 +128,13 @@
             <li>Attentive</li>
             <li>With a good sense of humor</li>
            </ul>
-           <h2>Education</h2>
-           <p><a href="https://rs.school/">RS School (Present)</a></p>
-           <h2>English Level</h2>
+           <h2 class="educat section__6">Education</h2>
+           <p><a href="https://rs.school/js-stage0/">JS / FRONT-END. STAGE 0 (Completed)</a></p>
+           <p><a href="https://rs.school/js/">JS / FRONT-END (Present)</a></p>
+
+           <h2 class="lvl section__7">English Level</h2>
            <p>B2 (Upper-Intermediate)</p>
-        </section>
+    </section>
  </main> 
 </div>   
 <footer class="footer">
@@ -83,6 +147,7 @@
     </p>
     <time datetime="2021"><mark>2021</mark></time>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>    
 
